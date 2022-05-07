@@ -19,43 +19,38 @@ body {
   background-position: bottom;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
   position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
-
-.header__logo {
-  height: 69px; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .header__logo {
+    height: 69px; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   color: #fdf9f9;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 20px; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 88px;
-  /* font-family: 'Indie Flower', cursive; */
-  animation: moveInLeft 1s ease-out; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 15px;
-  font-weight: 2 00;
-  letter-spacing: 9px;
-  font-family: 'Indie Flower', cursive;
-  animation: moveInRight 1s ease-out; }
+  .heading-primary--main {
+    display: block;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 88px;
+    /* font-family: 'Indie Flower', cursive; */
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 15px;
+    font-weight: 2 00;
+    letter-spacing: 9px;
+    font-family: 'Indie Flower', cursive;
+    animation: moveInRight 1s ease-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -79,8 +74,7 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -125,6 +119,10 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -135,7 +133,3 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards; }
