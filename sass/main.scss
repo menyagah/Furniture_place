@@ -121,6 +121,10 @@ body {
   &--white {
     background-color: $color-primary-light;
     color: $color-light;
+    &::after {
+      background-color: $color-primary-dark;
+      border: 0.5px solid $color-light;
+    }
   }
 
   &:hover {
@@ -129,6 +133,11 @@ body {
     background-color: $color-primary-dark;
     color: $color-light;
     border: 0.2px solid $color-light;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
 
   &:active {
@@ -147,16 +156,6 @@ body {
     left: 0;
     z-index: -1;
     transition: all 0.5s;
-  }
-
-  &--white::after {
-    background-color: $color-primary-dark;
-    border: 0.5px solid $color-light;
-  }
-
-  &:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
   }
 
   &--animated {

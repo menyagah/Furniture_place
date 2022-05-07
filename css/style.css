@@ -87,6 +87,9 @@ body {
 .btn--white {
   background-color: #17181a9a;
   color: #fdf9f9; }
+  .btn--white::after {
+    background-color: #080a13ec;
+    border: 0.5px solid #fdf9f9; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -94,6 +97,9 @@ body {
   background-color: #080a13ec;
   color: #fdf9f9;
   border: 0.2px solid #fdf9f9; }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
@@ -110,14 +116,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.5s; }
-
-.btn--white::after {
-  background-color: #080a13ec;
-  border: 0.5px solid #fdf9f9; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
