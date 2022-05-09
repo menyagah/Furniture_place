@@ -11,6 +11,18 @@ html {
 body {
   box-sizing: border-box; }
 
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -49,7 +61,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #fdf9f9;
+  color: #080a13ec;
   padding: 1.8rem; }
 
 .heading-primary {
@@ -72,12 +84,40 @@ body {
     font-family: 'Indie Flower', cursive;
     animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  color: #17181a9a;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #333131, #080a13ec); }
+  .heading-secondary:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(8, 10, 19, 0.3); }
+
+.heading-tertiary {
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: inline-block;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #333131, #080a13ec); }
+
+.paragraph {
+  font-size: 1.7rem;
+  font-weight: 400; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   border: 0.3px solid #fdf9f9;
   transition: all 0.5s;
   position: relative; }
@@ -119,9 +159,27 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.7rem;
+  color: #080a13ec;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #080a13ec;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #080a13ec;
+  color: #fdf9f9;
+  box-shadow: 0 1rem 2rem #080a13ec;
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem #080a13ec;
+  transform: translateY(0); }
+
 .row {
   max-width: 114rem;
-  background-color: rgba(73, 68, 68, 0.933);
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -130,7 +188,6 @@ body {
     display: table;
     clear: both; }
   .row [class^='col-'] {
-    background-color: orangered;
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
@@ -167,3 +224,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #eff1f1;
+  padding: 25rem 0;
+  margin-top: -20vh; }

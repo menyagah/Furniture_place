@@ -5,3 +5,15 @@
     clear: both;
   }
 }
+
+@mixin colorfix {
+  display: inline-block;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-light-1,
+    $color-primary-dark
+  );
+}

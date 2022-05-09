@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: $color-light;
+  color: $color-primary-dark;
   padding: 1.8rem;
 }
 
@@ -29,5 +29,34 @@ body {
     letter-spacing: 9px;
     font-family: 'Indie Flower', cursive;
     animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  color: $color-primary-light;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  @include colorfix;
+  // font-family: 'Indie Flower', cursive;
+
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba($color-primary-dark, 0.3);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  @include colorfix;
+  // font-family: 'Indie Flower', cursive;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  font-weight: 400;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
