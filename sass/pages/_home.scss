@@ -3,3 +3,14 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-gallery {
+  background-color: $color-light;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}

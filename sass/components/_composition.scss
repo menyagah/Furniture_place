@@ -8,22 +8,23 @@
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 2rem;
+    height: 24rem;
 
     &--p1 {
       top: 5rem;
       left: 15%;
-      height: 40rem;
     }
     &--p2 {
       top: -4rem;
       left: 44%;
+      height: 35rem;
     }
     &--p3 {
-      top: 26rem;
+      top: 12rem;
       left: 5%;
     }
     &:hover {
-      outline: 1.5rem solid $color-primary-dark;
+      // outline: 1.5rem solid $color-primary-dark;
       transform: scale(1.05) translateY(-5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-primary-dark, 0.4);
       z-index: 20;
@@ -32,5 +33,20 @@
 
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
+  }
+}
+
+.gallery {
+  &__set {
+    width: 100%;
+    transition: all 0.2s;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, 0.4);
+    border-radius: 0.6rem;
+
+    &:hover {
+      transform: scale(1.05) translateY(-5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-primary-dark, 0.4);
+      z-index: 20;
+    }
   }
 }
