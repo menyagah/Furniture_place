@@ -125,7 +125,8 @@ body {
   cursor: pointer; }
 
 .btn--green {
-  background-color: #303e7e; }
+  background-color: #303e7e;
+  color: white; }
 
 .btn--white {
   background-color: #17181a9a;
