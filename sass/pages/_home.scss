@@ -38,4 +38,9 @@
   border-radius: 3px;
   box-shadow: 0 1.5 4rem rgba($color-primary-dark, 0.8);
   height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
 }
