@@ -5,7 +5,7 @@
 
 ![screenshot](img/shot.png)
 
-This was a solo project. The project uses basic html5 and css3 and scss.
+This was a solo project. The project uses basic html5, css3 and scss.
 The use of css animations made the site both appealing and interesting to browse through.
 
 ## Built With
