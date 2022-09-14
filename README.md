@@ -1,3 +1,7 @@
+## Live Demo
+
+[Live Demo Link](https://menyagah.github.io/Furniture_place/)
+
 # Furniture Place
 
 - This is a furniture store website.
@@ -13,10 +17,6 @@ The use of css animations made the site both appealing and interesting to browse
 - Html5
 - css3
 - scss
-
-## Live Demo
-
-[Live Demo Link](https://menyagah.github.io/Furniture_place/)
 
 ## Getting Started
 
